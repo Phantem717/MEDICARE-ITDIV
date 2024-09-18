@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styleA.css">
+</head>
+<body>
+    <div class="box">
+        <div class="nav">
+            <div class="HB" >
+                <a href="javascript:void(0);" class="HB" onclick="myFunction()">&#9776</a>
+                
+            </div>
+            <img src="icon.png" height="45px" class="picright">
+            <ul class="Navmenu" id="navv">
+            <li><a href="index.HTML" class="main" id="mainH">Home</a></li>
+                <li><a href="#" class="main">Product</a>
+            
+                <ul class="dropmenu">
+                    <li><a href="Products.HTML" class="sub">Healthcare</a></li>
+                    <li><a href="#" class="sub">Cosmetics</a></li>
+                    <li><a href="#" class="sub">Misc.</a></li>
+                </ul>
+            
+                </li>
+            <li><a href="ABOUT US.HTML" class="main">About Us</a></li>
+            <li><a href="Register.HTML" class="main">Register</a></li>
+            <li class="active"><a href="login.HTML" class="login">Login</a></li>
+        </ul>
+
+        <script>
+            function myFunction() {
+var x = document.getElementById("navv");
+if (x.className === "Navmenu") {
+x.className += "responsive";
+} else {
+x.className = "Navmenu";
+}
+const Navmenu = document.querySelectorAll(".Navmenu");
+
+Navmenu.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    HB.classList.remove("active");
+    Navmenu.classList.remove("active");
+}
+}
+    </script>
+    </div>
+        </div>
+
+        <div class="title">
+            <h1>About Us</h1>
+        </div>
+
+        <div class="ALOGO">
+            <img src="icon.png" alt="">
+        </div>
+</body>
+
+<h1 class="caption">Founded in 2001, MediCare started as a small family-owned healthcare store in Kemanggisan,Jakarta. As more and more people get to know about MediCare, it is natural for us to expand our stores to other cities and provinces. Now, we have more than 100 stores spread out in almost every major cities in Indonesia, including but not limited to Aceh, Medan, Palembang, Jakarta, Surabaya, Pontianak, Balikpapan and Makassar. We also offers a wider variety for products from healthcare, cosmetics, medicines, and many more. We have a commitment to stay true to our humble origin and serving our customers with best customer services and high quality products.</h1>
+
+
+
+    <h3 class="Contacts">Contact Us</h3>
+    <h2 class="CS">Customer Service Hotline: (+62) 081123456789</h2>
+    <h2 class="CS">Customer Service Email: support@medicare.id</h2>
+
+
+<footer>
+    <div class="logos">
+        <a href="https://instagram.com/pradahws21/"><img src="instagram.svg" alt="instagram"></a>
+        <a href="https://instagram.com/phant0m.photography/"><img src="twitter.svg" alt="twitter"></a>
+        <a href="https://youtube.com/channel/UCWnrCDp7czBSPURhb769AZA"><img src="facebook.svg" class="facebook"></a>
+    </div>
+   
+
+<div class="footer">
+    <h6>Copyright © 2022 Pradah Widjaksono Suherli, All Rights Reserved.</h6>
+</div>
+
+
+    
+</footer>
+</html>

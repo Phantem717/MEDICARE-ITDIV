@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Healthcare</title>
+    <link rel="stylesheet" href="styleP.css">
+</head>
+<body>
+    <div class="box">
+        <div class="nav">
+            <div class="HB" >
+                <a href="javascript:void(0);" class="HB" onclick="myFunction()">&#9776</a>
+                
+            </div>
+            <img src="icon.png" height="45px" class="picright">
+            
+            <ul class="Navmenu" id="navv">
+            <li><a href="index.HTML" class="main" id="mainH">Home</a></li>
+                <li><a href="#" class="main">Product</a>
+            
+                <ul class="dropmenu">
+                    <li><a href="Products.HTML" class="sub">Healthcare</a></li>
+                    <li><a href="#" class="sub">Cosmetics</a></li>
+                    <li><a href="#" class="sub">Misc.</a></li>
+                </ul>
+            
+                </li>
+            <li><a href="ABOUT US.HTML" class="main">About Us</a></li>
+            <li><a href="Register.HTML" class="main">Register</a></li>
+            <li class="active"><a href="login.HTML" class="login">Login</a></li>
+        </ul>
+        <script>
+            function myFunction() {
+var x = document.getElementById("navv");
+if (x.className === "Navmenu") {
+x.className += "responsive";
+} else {
+x.className = "Navmenu";
+}
+const Navmenu = document.querySelectorAll(".Navmenu");
+
+Navmenu.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    HB.classList.remove("active");
+    Navmenu.classList.remove("active");
+}
+}
+    </script>
+    </div>
+        </div>
+    
+       
+
+        <div class="Titlebox">
+            <h1 class="Htitle">Healthcare</h1>
+            <h4 class="Hcap">Our most popular healthcare products, made and packaged carefully to cater your needs.</h4>
+        </div>
+
+        <div id="prods">
+            
+            <div class="B-oil" id="content">
+                <div class="best">
+                    <h4>Best Selling!</h4>
+                            </div>
+                <img src ="basil_oil.jpg" class="oil">
+                <h4 class="Otitle">Medicare Basil oil</h4>
+                <h5 class="Ocap">Basil oil is extracted from the herb Ocimum basilicum, of the Lamiaceae (Labiatae) family. It is also known as European, French, common or sweet basil.</h5>
+            </div>
+    
+            <div class="Soap" id="content">
+                <img src ="shampoo.jpg" class="soap">
+                <h4 class="Stitle">MediCare Special Shampoo</h4>
+                <h5 class="Scap">Get a head start every morning and experience the refreshing tingle of our special shampoo. Our shampoo contains special ingredients and tea tree oil to help wash away impurities.</h5>
+            </div>
+
+            <div class="Lotion" id="content">
+                <img src="lotion.jpg" class="llotion">
+                <h4 class="Ltitle">MediCare Body Lotion</h4>
+                <h5 class="Lcap">Containing earth-derived ingredients (think shea butter, cocoa butter, and jojoba oil) the rich concoction is formulated to condition, nourish, and smooth dry skin.</h5>
+            </div>
+        </div>
+    
+        <footer>
+            <div class="logos">
+                <a href="https://instagram.com/pradahws21/"><img src="instagram.svg" alt="instagram"></a>
+                <a href="https://instagram.com/phant0m.photography/"><img src="twitter.svg" alt="twitter"></a>
+                <a href="https://youtube.com/channel/UCWnrCDp7czBSPURhb769AZA"><img src="facebook.svg" class="facebook"></a>
+            </div>
+           
+        <div class="footer">
+            <h6>Copyright © 2022 Pradah Widjaksono Suherli, All Rights Reserved.</h6>
+        </div>
+       
+        
+    </footer>
+</body>
+</html>

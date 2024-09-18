@@ -1,0 +1,357 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+
+
+.box{
+box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.nav{
+    background-color: white;
+    height: 60px;
+    width: 100%;
+   
+    box-shadow: 15cm;
+    
+}
+.nav ul{
+    float: right;
+    
+}
+.nav li{
+    display: inline-flex;
+    margin-top: 15px;
+    margin-right: 20px;
+    line-height: 30px;
+    color: black;
+}
+.sub{
+    color: black;
+}
+.main{
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+.main::after{
+    content: "";
+    position:absolute ;
+    bottom: 5px;
+    height: 1px;
+    background-color: teal;
+    width: 0;
+    left: 0;
+    display: block;
+    
+}
+
+.main:hover::after{
+    width: 100%;
+    
+    
+}
+.picright{
+    float: left;
+    margin-left: 20px;
+    margin-top: 7px;
+
+}
+.login{
+    
+   padding-left: 15px;
+   padding-right: 15px;
+
+color: white;
+border-radius: 15px;
+}
+.Prod{
+    color: black;
+}
+.dropmenu{
+    display: none;
+    margin-top: 5px;
+}
+.nav ul li:hover .dropmenu {
+    font-size: 15px;
+    width: 150px;
+    height: 150px;
+    padding: 5px 5px;
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: -15px;
+    z-index: 1;
+    color: teal;
+    border-radius: 10px;
+
+}
+.nav ul li:hover.dropmenu ul{
+display: block;
+margin: 10px;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.facebook{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+footer img{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+h6{
+    color: black;
+    margin-top: 20px;
+    
+}
+.active{
+    background: teal;
+    border-radius: 20px;
+    color: white;
+}
+.main-content{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.Ltitle{
+    font-size: 40px;
+    padding-top: 40px;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+.login-box{
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px rgba(43, 43, 43, 0.673);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    width: 80%;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    
+    
+    
+
+
+
+ }
+label{
+color: teal;
+
+}
+
+ input{
+    margin-bottom: 20px;
+    color: teal;
+border-top: 0px;
+border-width: 3px;
+border-left: 0px;
+border-right: 0px;
+outline: 0px;
+margin-top: 20px;
+width: 70%;
+
+
+
+}
+
+form{
+    padding-top: 0px;
+
+    
+    position: relative;
+   margin-left:auto ;
+   margin-right: auto;
+    padding-bottom: 50px;
+    
+    
+
+
+}
+.logB{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+    padding-top: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border-bottom: none;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+p a{
+    color: teal;
+    text-decoration: underline;
+}
+.reg{
+    margin-top: 50px;
+align-items: center;
+text-align: center;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+display: block;
+width: 100%;
+
+}
+@media(max-width: 600px){
+    body{
+        height: 100vh;
+        
+    }
+    
+}
+
+form #mail{
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+justify-content: center;
+display: block;
+position: relative;
+margin-top: 50px;
+
+
+}
+form #mail{
+    margin-left: 25%;
+    
+}
+form #pass{
+    margin-left: 25%;
+    
+    }
+    .HB{
+        float: right;
+        cursor: pointer;
+        margin-top: 4px;
+        margin-right: 10px;
+        display: none;
+        font-weight: bolder;
+        font-size: 35px;
+    }
+    
+    
+    
+    
+    @media(max-width: 600px){
+        body{
+            height: 100vh;
+            
+        }
+        .main{
+            position: relative;
+            
+            color: white;
+        }
+        #mainH{
+            text-decoration: underline;
+        }
+        .Prod{
+            color: white;
+        }
+        .joinbutt{
+            margin-left: auto;
+        margin-right: auto;
+        }
+        .welcom{
+            margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        
+        }
+        .HB{
+            display: block;
+            color: black;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .active{
+            background: none;
+        }
+        #mainH{
+            text-decoration: underline;       
+         }
+        .Navmenu{
+            position: fixed;
+            width: 100%;
+            background-color: teal;
+            height: 200vh;
+            top: 60px;
+            left: 0;
+            text-align: center;
+            transition: 0.5s ease-in-out;
+            z-index: 1;
+    
+        }
+        .HB.active .bar:nth-child(2){
+            opacity: 0;
+          }
+         .HB.active .bar:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+          }
+         .HB.active .bar:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+          }
+    
+          .Navmenu ul.active{
+        left: 0;
+    }
+    .nav{
+        overflow: hidden;
+    }
+    
+        .nav ul li{
+            display: block;
+        }
+    
+
+
+    }
+        
+    
+
